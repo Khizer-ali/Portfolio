@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khizer Ali - Developer Portfolio</title>
+  <title>Khizer Ali - ML Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&family=Poppins:wght@300;500;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Header -->
@@ -14,71 +18,161 @@
     <div class="logo">Khizer<span>Ali</span></div>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="projects.html">Projects</a></li> 
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tabs-section">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="menu-icon">☰</div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hi, I’m <span>Khizer Ali</span></h1>
-      <p>A passionate <strong> ML Developer</strong> crafting beautiful & efficient AI solutions.</p>
-      <a href="https://github.com/Khizer-ali" class="btn">See My Work</a>
-    </div>
-    <div class="hero-img">
-      <img src="images\portfoliopic.jpg" alt="Khizer Ali">
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-img">
+        <img src="images/portfoliopic.jpg" alt="Khizer Ali">
+      </div>
+      <div class="hero-text">
+        <h1>Hi, I’m <span>Khizer Ali</span></h1>
+        <p>A passionate <strong>ML Developer</strong> specialized in NLP, Generative AI, and crafting efficient AI
+          solutions for the future.</p>
+        <div class="hero-btns">
+          <a href="https://github.com/Khizer-ali" class="btn btn-primary">See My Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="info-section">
-    <h2>About Me</h2>
-    <p>
-      I’m an AI/ML developer passionate about building intelligent systems using <span class="highlight">Python, PyTorch, and Hugging Face Transformers.</span> I enjoy solving complex problems, optimizing models, and leveraging modern AI frameworks to create impactful, data-driven solutions. My expertise lie in developing <span class="highlight">machine learning models, NLP and generative AI. </span>
-    </p>
+  <!-- Tabs Section -->
+  <section id="tabs-section" class="tabs-container">
+    <div class="tab-nav">
+      <button class="tab-btn active" data-tab="about">About</button>
+      <button class="tab-btn" data-tab="projects">Projects</button>
+      <button class="tab-btn" data-tab="education">Education</button>
+      <button class="tab-btn" data-tab="achievements">Achievements</button>
+    </div>
+
+    <!-- About Tab -->
+    <div id="about" class="tab-content active">
+      <div class="card glass">
+        <h2>About Me</h2>
+        <p>I’m an AI/ML developer passionate about building intelligent systems using <span class="highlight">Python,
+            PyTorch, and Hugging Face Transformers.</span> I enjoy solving complex problems, optimizing models, and
+          leveraging modern AI frameworks to create impactful, data-driven solutions.</p>
+        <br>
+        <h3>Experience</h3>
+        <div class="experience-list">
+          <div class="exp-item">
+            <h4>AI/ML Intern | Government of Pakistan (2025)</h4>
+            <p>Designed and implemented AI/ML models using YOLO and Hugging Face Transformers. Developed custom
+              transformer blocks for LLMs to enhance performance.</p>
+          </div>
+          <br>
+          <div class="exp-item">
+            <h4>Summer Intern | DWP Group (2022)</h4>
+            <p>Gained foundational programming skills and professional office experience with a focus on technical
+              growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Tab -->
+    <div id="projects" class="tab-content">
+      <div class="grid">
+        <div class="card glass">
+          <h3>Heart Disease Prediction</h3>
+          <p>ML model to predict heart disease risk using patient health data. Features data preprocessing and
+            classification algorithms.</p>
+          <a href="https://github.com/Khizer-ali/Heart-Disease-Prediction" target="_blank" class="btn btn-outline">View
+            Project</a>
+        </div>
+        <div class="card glass">
+          <h3>Fake News Detection</h3>
+          <p>LSTM-based model to classify news articles as real or fake. Includes advanced text preprocessing and
+            embedding layers.</p>
+          <a href="https://github.com/Khizer-ali/Fake-News-Detection-with-LSTM" target="_blank"
+            class="btn btn-outline">View Project</a>
+        </div>
+        <div class="card glass">
+          <h3>RAG System</h3>
+          <p>Retrieval-Augmented Generation pipeline integrating a vector database and transformer-based LLMs for
+            context-aware responses.</p>
+          <a href="https://github.com/Khizer-ali/RAG" target="_blank" class="btn btn-outline">View Project</a>
+        </div>
+        <div class="card glass">
+          <h3>YouTube Summarizer</h3>
+          <p>NLP tool that extracts transcripts from YouTube videos and generates concise summaries using transformer
+            models.</p>
+          <a href="https://github.com/Khizer-ali/Youtube-video-summarizer" target="_blank" class="btn btn-outline">View
+            Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Tab -->
+    <div id="education" class="tab-content">
+      <div class="card glass">
+        <h2>Education</h2>
+        <div class="experience-list">
+          <div class="edu-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p><span class="highlight">Major in Artificial Intelligence.</span> Focused on advanced algorithms, deep
+              learning, and data structures. Actively involved in AI research groups.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements Tab -->
+    <div id="achievements" class="tab-content">
+      <div class="card glass">
+        <h2>Key Achievements</h2>
+        <div class="achievements-list">
+          <div class="ach-item">
+            <h3>LLM Optimization</h3>
+            <p>Developed custom Transformer blocks resulting in significant performance gains in large-scale inference
+              tasks.</p>
+          </div>
+          <div class="ach-item">
+            <h3>Computer Vision Deployment</h3>
+            <p>Successfully deployed YOLO-based real-time surveillance models for large-scale governmental monitoring
+              systems.</p>
+          </div>
+          <div class="ach-item">
+            <h3>Open Source Contributor</h3>
+            <p>Active contributor to machine learning repositories, focusing on modularity and efficiency in
+              Python-based frameworks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-
-  
-  <section id="experience" class="experience">
-  <h2>Experience</h2>
-  
-  <div class="timeline">
-    <div class="exp-card">
-      <h3>Summer Intern</h3>
-      <h4>DWP Group</h4>
-      <p><em>2022</em></p>
-      <p>Gained foundational programming skills while adapting to a professional office environment, focusing on teamwork, communication, and technical growth.</p>
-    </div>
-
-    <div class="exp-card">
-      <h3>AI/ML Intern</h3>
-      <h4>Government of Pakistan</h4>
-      <p><em>2025</em></p>
-      <p>Designed and implemented AI/ML models using YOLO and Hugging Face Transformers, and developed a custom transformer block for large language models (LLMs) to enhance performance and scalability.</p>
-    </div>
-  </div>
-</section>
-
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Full Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message..." required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+    <div class="tabs-container">
+      <div class="card glass">
+        <h2>Get In Touch</h2>
+        <form>
+          <input type="text" placeholder="Your Full Name" required class="glass"
+            style="width: 100%; border: 1px solid var(--glass-border); padding: 15px; margin-bottom: 20px; color: white;">
+          <input type="email" placeholder="Your Email" required class="glass"
+            style="width: 100%; border: 1px solid var(--glass-border); padding: 15px; margin-bottom: 20px; color: white;">
+          <textarea placeholder="Your Message..." required class="glass"
+            style="width: 100%; border: 1px solid var(--glass-border); padding: 15px; margin-bottom: 20px; min-height: 150px; color: white;"></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer style="text-align: center; padding: 40px; color: var(--text-muted);">
     <p>© 2025 Khizer Ali | All Rights Reserved</p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
+
 </html>
